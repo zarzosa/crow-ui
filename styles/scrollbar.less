@@ -1,0 +1,21 @@
+.tree-view-resizer, atom-text-editor::shadow  {
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: @base-background-color;
+
+    &-track {}
+
+    &-thumb {
+      background-color: @background-color-highlight;
+
+      &:window-inactive {
+        background-color: rgb(116, 115, 105);
+      }
+    }
+
+    &-corner {
+      background-color: @base-background-color;
+    }
+  }
+}
